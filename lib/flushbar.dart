@@ -256,11 +256,11 @@ class Flushbar<T extends Object> extends StatefulWidget {
 
   @override
   State createState() {
-    return _FlushbarState<T>();
+    return FlushbarState<T>();
   }
 }
 
-class _FlushbarState<K extends Object> extends State<Flushbar> with TickerProviderStateMixin {
+class FlushbarState<K extends Object> extends State<Flushbar> with TickerProviderStateMixin {
   FlushbarStatus currentStatus;
 
   AnimationController _fadeController;
